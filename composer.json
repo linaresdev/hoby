@@ -1,0 +1,39 @@
+{
+    "name": "linaresdev/hoby",
+    "description": "Aplicativo personal para hobbies",
+    "keywords": [
+        "laravel",
+        "core",
+        "api"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ing. Ramón A Linares Febles",
+            "email": "rlinares4381@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hoby\\": "App/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hoby\\Providers\\HobyServiceProvider"
+            ],
+            "aliases": {
+                "Hoby": "Hoby\\Facade\\Hoby"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
